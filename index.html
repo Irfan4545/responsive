@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+    <title>
+        Responsive
+    </title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <nav class="nav-section" id="navbar">
+        <div class="close" id="close">X</div>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Song</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"> Logout</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" id="menu"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+    </div>
+    <header>
+        <h1>Welcome to my webpage</h1>
+    </header>
+    <section>
+
+        <h2>My name is Md Irfan</h2>
+    </section>
+
+
+    <footer>
+        <h3>This webpage create for me</h3>
+    </footer>
+    <script>
+        const menu = document.getElementById('menu');
+        const close = document.getElementById('close');
+        let nav = document.getElementById('navbar');
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        })
+        close.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/*@charset "utf-8";
+*{
+    .col-1{
+        width:8.33%;
+
+    }
+    .col-2{
+        width:16.66%;
+
+    }
+    .col-3
+    {
+        width:25%;
+    }
+    .col-4{
+        width:33.33%;
+    }
+    .col-5{
+        width:41.66%
+
+    }
+    .col-6{
+        width:50%;
+    }
+    .col-7{
+        width:58.33%;
+    }
+    .col-8{
+        width:66.66%;
+    }
+    .col-9{
+        width:75%;
+    }
+    .col-10{
+        width:83.33%;
+    }
+    .col-11{
+        width:91.66%;
+    }
+    .col12{
+        width:100%;
+    }
+}
+ 
+header,nav,section,footer{
+    border-width:2px;
+    border-style:solid;
+    border-color:blue;
+}*/
+
+
+
+body{
+    margin:0;
+    padding:0;
+
+}
+
+nav{
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+}
+ 
+li{
+    display:inline-block;
+    text-align:center;
+    justify-items: center;
+    box-sizing:border-box;
+    padding:12px;
+    font-family: sans-serif;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.close{
+    position: absolute;
+    right: 0;
+    color:white;
+    padding:20px;
+    cursor: pointer;
+    display: none;
+}
+.menu{
+    display: none;
+    background-color:black;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+li:hover{
+    background-color:red;
+    transition: 0.5s;
+}
+header{
+    background-color:yellow;
+    font-family:sans-serif;
+    text-align:center;  
+    width:100%;
+    height:200px;
+    padding-top:40px;  
+}
+section{
+    background-color:yellow;
+    font-family:sans-serif;
+    text-align:center;
+    width:100%;
+    height:250px;
+    padding-top:60px;
+}
+footer{
+
+
+    background-color:red;
+    font-family:sans-serif;
+    text-align:center;
+    width:100%;
+    height:150px;
+    padding-top:40px;
+
+
+}
+
+
+
+/*         Responsive design*/
+
+@media screen and (max-width: 500px) {
+   .close{
+      display: inline;
+   }
+    nav{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 18rem;
+        height:100vh;
+        position: fixed;
+        top:0;
+        left: 0;
+    
+    }
+    ul{
+        flex-direction: column;
+    
+    
+    }
+    .active{
+        display: flex;
+    }
+    .menu{
+        display: block;
+        
+    }
+   
+  }
+
+
